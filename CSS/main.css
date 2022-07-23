@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    color: #000;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    /* left: 30%; */
+}
+
+#profile_pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.profile_border {
+    --border-width: 3px;
+    display: flex;
+    border-radius: var(--border-width);
+    width: 350px;
+    height: 350px;
+}
+
+.profile_border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(60deg,
+            hsl(0, 0%, 100%),
+            hsl(0, 0%, 60%),
+            hsl(0, 0%, 30%),
+            hsl(0, 0%, 20%),
+            hsl(0, 0%, 15%),
+            hsl(0, 0%, 10%),
+            hsl(0, 0%, 5%),
+            hsl(0, 0%, 0%));
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 80%;
+    padding: 3.5px;
+    animation: moveGradient 4.4s alternate infinite;
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.solidBlock {
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.solidBlock::after {
+    content: '';
+    position: absolute;
+    width: 1300%;
+    height: 500%;
+    top: 20px;
+    right: -500%;
+    background: rgba(255, 255, 255, 0.212);
+    transform-origin: 54% 0;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.headerRight {
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+}
+
+#about {
+    font-size: 1rem;
+}
+
+.halfRight {
+    width: 80%;
+    position: absolute;
+    right: 35%;
+}
+
+.typewrite {
+    padding-bottom: 15px;
+}
+
+/*-----------------------------NavBar----------------------------*/
+.navbar {
+    display: flex;
+    transform: perspective(300px) rotateX(20deg);
+    perspective-origin: center center;
+    transition: all 1.3s ease-out;
+    justify-content: center;
+    transform-style: preserve-3d;
+    
+}
+
+.navbar:hover {
+    perspective: 1000px;
+    transition: all 1.3s ease-in;
+    transform: perspective(10000px) rotateY(0deg);
+}
+
+.navbar:hover .text {
+    opacity: 1;
+}
+
+.navbar:hover>div {
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.navbar:hover .explainer {
+    opacity: 0;
+}
+
+.left,
+.center,
+.right,
+.lefter,
+.righter {
+    width: 120px;
+    height: 100px;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 20px 5px rgba(67, 8, 129, 0.748);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 1s;
+    position: relative;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(70, 8, 136);
+    cursor: pointer;
+    background-blend-mode: color-burn;
+}
+
+.left:hover,
+.center:hover,
+.right:hover,
+.lefter:hover,
+.righter:hover {
+    box-shadow: 0 0 30px 10px rgba(27, 3, 54, 0.301);
+    background-color: rgba(92, 34, 174, 0.284);
+}
+
+.text {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 5px;
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(100, 100, 255, .6);
+    transform: rotate(360deg);
+}
+
+.lefter {
+    transform: translateX(-60px) translateZ(-50px) rotateY(-10deg);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/eon-ecommerce-i-1/32/chat_conversation_baloon_texting-512.png);
+    transform: rotate(90deg);
+    background-size: 50%;
+}
+
+.left {
+    transform: translateX(-30px) translateZ(-25px) rotateY(-5deg);
+    background-image: url(https://cdn0.iconfinder.com/data/icons/startup-22/64/planning_development_business_plan_document_project-512.png);
+    transform: rotate(90deg);
+    background-size: 60%;
+}
+
+.center {
+    opacity: 1;
+    background-image: url(https://cdn1.iconfinder.com/data/icons/seo-and-web-development-5/32/development_Homepage_website-256.png);
+    transform: rotate(90deg);
+    background-size: 60%;
+}
+
+.right {
+    transform: translateX(30px) translateZ(-25px) rotateY(5deg);
+    background-image: url(https://cdn0.iconfinder.com/data/icons/seo-and-web-2-2/66/109-512.png);
+    transform: rotate(90deg);
+    background-size: 50%;
+}
+
+.righter {
+    transform: translateX(60px) translateZ(-50px) rotateY(10deg);
+    background-image: url(https://cdn4.iconfinder.com/data/icons/silky-icon-user/60/user2-info-512.png);
+    transform: rotate(90deg);
+    background-size: 50%;
+}
+
+.explainer {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #fff;
+    transition: all .6s ease;
+    width: 100%;
+    height: 100%;
+    background-color: #30305013;
+    background-image: radial-gradient(circle at center top, rgb(204, 204, 238), rgb(0, 0, 0));
+    border-radius: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate{
+    position: absolute;
+    right: -10%;
+    top: 45%;
+    transform: rotate(-90deg);
+}
