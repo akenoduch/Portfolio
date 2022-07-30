@@ -1,6 +1,6 @@
 /* ---- particles.js config ---- */
 
-particlesJS("background", {
+particlesJS("bg", {
     "particles": {
       "number": {
         "value": 90,

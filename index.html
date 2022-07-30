@@ -2,79 +2,239 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="./CSS/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Felipe Lemos</title>
 </head>
 
 <body>
-
-    <div id="background"></div>
-
-    <div class="container">
-        <div class="headerLeft header">
-            <div class="profile">
-                <div class="profile_border">
-                    <img id="profile_pic" src="./images/me.jpg">
-                </div>
-            </div>
-            <div class="solidBlock"></div>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#bg">
+            <h1><span>F</span>elipe <span>L</span>emos</h1>
+          </a>
         </div>
-
-        <div class="headerRight header">
-            <div class="halfRight">
-                <h1>
-                    <p class="typewrite" data-period="2000"
-                        data-type='[ "Hi, I&#39m Felipe.", "I&#39m Creative. :)", "I Love Challenge.", "I Love to Develop." ]'>
-                        <span class="wrap"></span>
-                    </p>
-                </h1>
-                <p id="about">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum."
-                </p>
-            </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#bg" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Skills">Skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-    <div class="rotate">
-        <div class="navbar">
-            <div class="lefter">
-                <a href="./pages/contact.html">
-                    <div class="text">Contact</div>
-                </a>
-            </div>
-            <div class="left">
-                <a href="./pages/projects.html">
-                    <div class="text">Projects</div>
-                </a>
-            </div>
-            <div class="center">
-                <div class="explainer"><span>Menu</span></div>
-                <a href="./pages/index.html">
-                    <div class="text">Home</div>
-                </a>
-            </div>
-            <div class="right">
-                <a href="./pages/knowledge.html">
-                    <div class="text">Knowledge</div>
-                </a>
-            </div>
-            <div class="righter">
-                <a href="./pages/about.html">
-                    <div class="text">About</div>
-                </a>
-            </div>
-        </div>
-    </div>
+  </section>
+  <!-- End Header -->
 
-    <script src="./JS/particles.min.js"></script>
-    <script src="./JS/background.js"></script>
-    <script src="./JS/text.js"></script>
+
+  <!-- bg Section  -->
+  <section id="bg">
+    <div class="bg container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Felipe <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End bg Section  -->
+
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">kno<span>w</span>ledge</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum deleniti maiores pariatur assumenda quas
+          magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
+          voluptatum explicabo!</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="./img/html5.png"/></div>
+          <h2>HTML5</h2>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./img/css3.png" /></div>
+          <h2>CSS3</h2>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./img/javascript.png" /></div>
+          <h2>JavaScript</h2>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="./img/react.png" /></div>
+          <h2>React</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Pro<span>j</span>ects</h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Portfolio</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/portfolio.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Memory Game</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/memory.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>E-Commerce Pure JS</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/ecommerce_js.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Tic-Tac-Toe</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/tictac.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Landing Page</h1>
+            <h2>Coding is Love</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/landingpage.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img2.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
+          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+          reprehenderit libero enim!</p>
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/nolan/452/whatsapp.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2><strong>+55 61 98166-4366</strong></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/nolan/452/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2><strong>felipe.pye@gmail.com</strong></h2>
+            <h2><strong>felipe.pye@hotmail.com</strong></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/nolan/452/map.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2><strong>Brasília, Brazil</strong></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>F</span>elipe <span>L</span>emos</h1>
+      </div>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/felipe-vilemondes-piedade-lemos-518a471a1/"><img src="https://img.icons8.com/nolan/452/linkedin-circled.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/akenoduch/"><img src="https://img.icons8.com/nolan/452/github.png" /></a>
+        </div>
+        <!-- <div class="social-item">
+          <a href="#"><img src="" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="" /></a>
+        </div> -->
+      </div>
+      <p>Copyright © 2022 Felipe. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./JS/particles.min.js"></script>
+  <script src="./JS/background.js"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
