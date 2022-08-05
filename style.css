@@ -16,6 +16,10 @@ a {
 	text-decoration: none;
 }
 
+a:visited {
+	text-decoration: none;
+}
+
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -39,8 +43,8 @@ p {
 	letter-spacing: 0.05rem;
 }
 
-.contact a:link, .contact
- a:visited {
+.contact a:link,
+.contact a:visited {
 	text-decoration: none;
 	color: black;
 }
@@ -57,6 +61,11 @@ p {
 
 .section-title span {
 	color: #7700CA;
+}
+
+.project-info span {
+	color: #7700CA;
+	font-size: 1.5rem;
 }
 
 .cta {
