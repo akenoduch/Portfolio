@@ -244,13 +244,13 @@ p {
 }
 
 .en{
-	background-image: url(./img/great-britain.png);
+	background-image: url(../img/great-britain.png);
 	background-repeat: no-repeat;
 	background-size: 58%;
 }
 
 .pt{
-	background-image: url(./img/brazil.png);
+	background-image: url(../img/brazil.png);
 	background-repeat: no-repeat;
 	background-size: 58%;
 }
