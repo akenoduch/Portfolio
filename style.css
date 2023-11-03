@@ -397,6 +397,12 @@ p {
 	margin-bottom: 20px;
 }
 
+#services .service-bottom .maui {
+	height: 70px;
+	width: 70px;
+	margin-bottom: 30px;
+}
+
 #services .service-item h2 {
 	font-size: 2rem;
 	color: white;
